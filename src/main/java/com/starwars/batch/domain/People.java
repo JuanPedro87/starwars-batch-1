@@ -1,5 +1,6 @@
 package com.starwars.batch.domain;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -11,16 +12,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "people")
 @Entity
 public class People {
-  @Id
-  @GeneratedValue
-  private String id;
-
-  private String name;
-  private String birthYear;
-  private String gender;
-  private String height;
-  private String mass;
-  private String eyeColor;
-  private String hairColor;
-  private String skinColor;
+    @Id
+    @GeneratedValue
+    private String id;
+    private String name;
+    private String birthYear;
+    private String gender;
+    private String height;
+    private String mass;
+    private String eyeColor;
+    private String hairColor;
+    private String skinColor;
 }

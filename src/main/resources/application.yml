@@ -1,0 +1,6 @@
+logging:
+  file: log/file.log
+spring:
+  batch:
+    job:
+      enabled: false
